@@ -1,0 +1,32 @@
+.row
+	.col-md-12
+		if typeof tasks !== "undefined"
+			table
+				colgroup
+					col.col-xs-1
+					col.col-md-6
+					col.col-xs-1
+					col.col-xs-1
+				tbody
+					each task in tasks
+						tr.oneTodo(data-id=task.id)
+							if task.completed()
+								td.text-center.pagination-centered	
+									input.center#check(type="checkbox", checked="checked")
+								td
+									h2.taskTitle.centerTable=task.title()
+							else
+								td.text-center.pagination-centered.col-md-1
+									input.center#check(type="checkbox")
+								td.taskCell
+									h2.taskTitle.centerTable=task.title()
+
+							td
+								a.btn.btn-dead.btn-lg(href="#todo/"+task.id, title="Edit task", type="button")
+									span.glyphicon.glyphicon-align-justify
+
+							td
+								button.btn.btn-danger.delete-task.btn-lg.hideButton(aria-hidden="true", title="Delete task", type="button")
+									span.glyphicon.glyphicon-remove
+
+						

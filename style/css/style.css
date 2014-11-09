@@ -1,0 +1,83 @@
+body {
+   padding-top: 70px!important;
+}
+.setCenter{
+	text-align: center!important; /* center checkbox horizontally */
+    vertical-align: middle!important; /* center checkbox vertically */
+}
+.margin-Right{
+	margin-right: 5%;
+	margin-left: 2%;
+}
+a { display:block; /* Pre-existing code */ }
+button.center {
+
+float: none;
+display: table;
+margin: 0 auto;
+
+}
+.overLine{
+	border-top: solid 3px #666;
+}
+input.center{
+	-webkit-transform: scale(1.8,1.8);
+	-moz-transform: scale(1.8,1.8);
+	-o-transform: scale(1.8,1.8);
+}
+#TaskInput{
+	margin-bottom: 2%;
+}
+.centerTable{
+	display: table-cell;
+	vertical-align: middle;
+}
+.maxWidth{
+	width: 100%;
+	height: 100%;
+}
+td h3{
+	margin-bottom: 4%;
+}
+.text-completed{
+	text-decoration: line-through;
+}
+.hideButton{
+	visibility: hidden;
+}
+#edit-task-input{
+	text-align: left!important;
+}
+.input-group{
+	width: 100%;
+}
+
+.btn-dead,
+.btn-dead:hover {
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+}
+.btn-dead {
+  background-color: #454545;
+  background-image: -moz-linear-gradient(top, #454545, #262626);
+  background-image: -ms-linear-gradient(top, #454545, #262626);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#454545), to(#262626));
+  background-image: -webkit-linear-gradient(top, #454545, #262626);
+  background-image: -o-linear-gradient(top, #454545, #262626);
+  background-image: linear-gradient(top, #454545, #262626);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#454545', endColorstr='#262626', GradientType=0);
+  border-color: #262626 #262626 #802420;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.btn-dead:hover,
+.btn-dead:active,
+.btn-dead.active,
+.btn-dead.disabled,
+.btn-dead[disabled] {
+  background-color: #262626;
+}
+.btn-dead:active, .btn-dead.active {
+  background-color: #262626 \9;
+}
